@@ -1,5 +1,6 @@
 import mtcnn_detect_face
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from keras import backend as K
 import numpy as np
 import cv2
